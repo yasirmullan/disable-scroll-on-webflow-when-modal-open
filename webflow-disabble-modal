@@ -1,0 +1,20 @@
+<!-- Keeps page from scrolling when modal is open -->
+<script>
+Webflow.push(function() {
+   $('.modal-button').click(function(e) {
+      e.preventDefault();
+   $('body').css('overflow', 'hidden');
+ });  $('.close').click(function(e) {
+      e.preventDefault();
+    $('body').css('overflow', 'auto');
+ });
+});
+</script>
+<script>
+Webflow.push(function() {
+  $('.modal-bg').click(function(e) {
+    e.preventDefault();
+       $('body').css('overflow', 'auto');
+ });
+});
+</script>
